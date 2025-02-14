@@ -23,7 +23,7 @@ for subdir, label in subdirs.items():
             annotations.append([file_path, label])
 
 # Create a DataFrame and save it as a CSV file
-df = pd.DataFrame(annotations, columns=['file_path', 'label'])
+df = pd.DataFrame(annotations, columns=['img_path', 'label'])
 df.to_csv(annotation_file, index=False)
 
 print(f"Annotation file created: {annotation_file}")
